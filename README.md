@@ -1,10 +1,21 @@
 ### Hey 👋, I'm Govin
 
-<p>
-  <a href="https://github.com/Guovin">
-    <img height="185" src="https://github-stats-extended.vercel.app/api?username=guovin&show_icons=true&count_private=true&hide_border=true&show=prs_merged_percentage&theme=tokyonight" alt="Govin's github stats" />
-  </a>
-  <a href="https://github.com/Guovin?tab=repositories">
-    <img height="185" src="https://github-stats-extended.vercel.app/api/top-langs/?username=guovin&layout=compact&count_private=true&hide_border=true&langs_count=8&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0&theme=tokyonight" alt="Govin's top languages" />
-  </a>
-</p>
+<!-- Light Mode -->
+<div align="center"> 
+<a href="https://github.com/Guovin">
+<img height=259 src="./profile/top-langs-light.svg#gh-light-mode-only" alt="Top Languages" />
+</a>
+<a href="https://github.com/Guovin">
+<img height=240 src="./profile/stats-light.svg#gh-light-mode-only" alt="Github stats" />
+</a>
+</div>
+
+<!-- Dark Mode -->
+<div align="center"> 
+<a href="https://github.com/Guovin">
+<img height=259 src="./profile/top-langs-dark.svg#gh-dark-mode-only" alt="Top Languages" />
+</a>
+<a href="https://github.com/Guovin">
+<img height=240 src="./profile/stats-dark.svg#gh-dark-mode-only" alt="Github stats" />
+</a>
+</div>
