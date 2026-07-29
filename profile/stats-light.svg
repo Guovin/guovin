@@ -1,15 +1,15 @@
 
       <svg
-        width="347"
+        width="437"
         height="269"
-        viewBox="0 0 347 269"
+        viewBox="0 0 437 269"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Govin's GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 25032, Total Commits  (last year) : 324, Total PRs: 479, Total PRs Reviewed: 2, Total Issues: 28, Total Discussions Answered: 89, Contributed to (last year): 2</desc>
+        <title id="titleId">Govin's GitHub Stats, Rank: A+</title>
+        <desc id="descId">Total Stars Earned: 25032, Total Commits  : 1976913, Total PRs: 479, Total PRs Reviewed: 2, Total Issues: 28, Total Discussions Answered: 89, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 37.67904743839867;
+        stroke-dashoffset: 20.620040928833944;
       }
     }
   
@@ -110,7 +110,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="346"
+          width="436"
           fill="#fffefe"
           stroke-opacity="0"
         />
@@ -136,7 +136,18 @@
           transform="translate(0, 55)"
         >
           
-    
+    <g data-testid="rank-circle"
+          transform="translate(367, 84.5)">
+        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
+        <circle class="rank-circle" cx="-10" cy="8" r="40" />
+        <g class="rank-text">
+          
+        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
+          A+
+        </text>
+      
+        </g>
+      </g>
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
@@ -160,13 +171,13 @@
       <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"/>
     </svg>
   
-      <text class="stat  bold" x="25" y="12.5">Total Commits (last year):</text>
+      <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
       <text
         class="stat  bold"
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >324</text>
+      >1976.9k</text>
     </g>
   </g><g transform="translate(0, 56)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
