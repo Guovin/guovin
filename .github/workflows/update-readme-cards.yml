@@ -1,40 +1,58 @@
-name: Update README cards
-
+name: GitHub Readme Stats
 on:
-  schedule:
-    - cron: "0 16 * * *"
   workflow_dispatch:
+  schedule:
+  - cron: 0 */4 * * *
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  update-cards:
     permissions:
       contents: write
-
+    runs-on: ubuntu-latest
+    name: Update cards
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Generate stats card
-        uses: stats-organization/github-readme-stats-action@v2
+      - name: Ensure output folder
+        run: mkdir -p profile
+
+      - name: Generate stats (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight
-          path: profile/stats.svg
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=default'
+          path: profile/stats-light.svg
           token: ${{ secrets.STATS_PAT }}
 
-      - name: Generate top languages card
-        uses: stats-organization/github-readme-stats-action@v2
+      - name: Generate stats (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=dark&bg_color=000000'
+          path: profile/stats-dark.svg
+          token: ${{ secrets.STATS_PAT }}
+
+      - name: Generate top languages (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=tokyonight&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0
-          path: profile/top-langs.svg
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&card_width=347&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0&theme=default'
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.STATS_PAT }}
+
+      - name: Generate top languages (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&card_width=347&exclude_repo=github-readme-stats,jindouyunERP,Guovin.github.io,hexo-blog-7.0&theme=dark&bg_color=000000'
+          path: profile/top-langs-dark.svg
           token: ${{ secrets.STATS_PAT }}
 
       - name: Commit cards
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update README cards" || exit 0
           git push
