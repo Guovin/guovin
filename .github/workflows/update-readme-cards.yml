@@ -21,7 +21,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=default'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&show=discussions_answered&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=default'
           path: profile/stats-light.svg
           token: ${{ secrets.STATS_PAT }}
 
@@ -29,7 +29,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=dark&bg_color=000000'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&show=discussions_answered&hide_rank=true&exclude_repo=github-readme-stats&show=reviews,discussions_answered&theme=dark&bg_color=000000'
           path: profile/stats-dark.svg
           token: ${{ secrets.STATS_PAT }}
 
