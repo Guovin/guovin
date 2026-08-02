@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Govin's GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 25068, Total Commits  (last year) : 327, Total PRs: 479, Total PRs Reviewed: 2, Total Issues: 28, Total Discussions Answered: 89, Contributed to (last year): 2</desc>
+        <desc id="descId">Total Stars Earned: 25070, Total Commits  (last year) : 327, Total PRs: 479, Total PRs Reviewed: 2, Total Issues: 28, Total Discussions Answered: 89, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 37.53684595407099;
+        stroke-dashoffset: 37.536832676644224;
       }
     }
   
